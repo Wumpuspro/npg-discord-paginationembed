@@ -1,0 +1,14 @@
+{
+  "excludeExternals": true,
+  "excludeProtected": true,
+  "excludeNotDocumented": true,
+  "name": "Discord PaginationEmbed - Docs",
+  "entryPoints": [
+    "src/base/index.ts",
+    "src/Embeds.ts",
+    "src/FieldsEmbed.ts"
+  ],
+  "out": "docs/master",
+  "readme": "README.md",
+  "theme": "node_modules/typedoc-neo-theme/bin/default"
+}

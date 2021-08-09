@@ -1,0 +1,56 @@
+{
+  "name": "npg-discord-paginationembed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp",
+    "test:build": "gulp build",
+    "test:bot": "node ./test/bot.js",
+    "dev:start": "nodemon ./test/bot.js --config .nodemon.json",
+    "dev:watch": "tsc -p . --watch",
+    "dev:gulp-watch": "gulp watch",
+    "docs:parse": "npm run gh:build -- --json ./bin/docs.json",
+    "gh:build": "typedoc",
+    "prepublishOnly": "npm test",
+    "pub": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wumpuspro/npg-discord-paginationembed.git"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "pagination",
+    "embed",
+    "npg",
+    "paginationembed",
+    "emoji",
+    "react",
+    "leaderboard"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wumpuspro/npg-discord-paginationembed/issues"
+  },
+  "homepage": "https://github.com/Wumpuspro/npg-discord-paginationembed#readme",
+  "dependencies": {
+    "discord.js": "^13.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint7": "^0.3.1",
+    "gulp-terser": "^2.0.1",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typedoc": "^0.21.5",
+    "typedoc-neo-theme": "^1.1.1",
+    "typedoc-plugin-no-inherit": "^1.3.0",
+    "typescript": "^4.3.5"
+  }
+}
